@@ -1660,6 +1660,11 @@ button:focus {
     .modal-content p {
         font-size: 16px;
     }
+
+    /* Fix for About Me page overlap on mobile */
+    #page-content {
+        padding-top: 140px !important;
+    }
 }
 
 /* ========== 超小屏幕 (iPhone SE等) ========== */
@@ -2110,6 +2115,11 @@ button:focus {
 
     .modal-content p {
         font-size: 16px;
+    }
+
+    /* Fix for About Me page overlap on mobile */
+    #page-content {
+        padding-top: 140px !important;
     }
 }
 
