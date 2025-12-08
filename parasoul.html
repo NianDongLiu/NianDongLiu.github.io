@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parasoul - NianDong Liu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Comfortaa:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="header-fixed">
+        <div id="title" onclick="window.location.href='index.html'">NianDong Liu Portfolio</div>
+        <div id="links">
+            <a href="games.html" class="active">Games</a>
+            <a href="otherworks.html" style="margin:0px 60px;">Other Works</a>
+            <a href="about.html">About Me</a>
+        </div>
+    </div>
+
+    <div id="page-content">
+        <!-- Project: Parasoul -->
+        <div class="project">
+            <h2>Parasoul</h2>
+            <p class="project-type">Souls-like Boss Rush</p>
+
+            <!-- Image Gallery -->
+            <div class="project-gallery">
+                <div class="gallery-container media-glow">
+                    <button class="gallery-btn prev" onclick="changeSlide('parasoul', -1)">&#10094;</button>
+                    <div class="slides" id="parasoul-slides">
+                        <img src="images/title.png" class="slide active" alt="Parasoul Title">
+                        <img src="images/Changjing1.jpg" class="slide" alt="Parasoul Screenshot 1">
+                        <img src="images/changjing2.jpg" class="slide" alt="Parasoul Screenshot 2">
+                        <img src="images/changjing3.jpg" class="slide" alt="Parasoul Screenshot 3">
+                    </div>
+                    <button class="gallery-btn next" onclick="changeSlide('parasoul', 1)">&#10095;</button>
+                </div>
+                <div class="slide-indicators" id="parasoul-indicators">
+                    <span class="indicator active" onclick="currentSlide('parasoul', 0)"></span>
+                    <span class="indicator" onclick="currentSlide('parasoul', 1)"></span>
+                    <span class="indicator" onclick="currentSlide('parasoul', 2)"></span>
+                    <span class="indicator" onclick="currentSlide('parasoul', 3)"></span>
+                </div>
+            </div>
+
+            <!-- Video -->
+            <div class="video-container media-glow">
+                <iframe src="https://www.youtube.com/embed/Dycrq2do6xY" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="project-description">
+                Parasoul is a thrilling and high-stakes souls-like boss rush where players can battle countless
+                challenging foes to increase in power and take on increasingly tougher enemies. Prove yourself against
+                bosses, and equip yourself with upgrades from the market. This is a team Project, and the details are in
+                the Game Design Document.
+            </div>
+            <button class="btn_two" onclick="window.open('https://www.youtube.com/watch?v=Dycrq2do6xY', '_blank')">Watch
+                Gameplay</button>
+            <button class="btn_two" onclick="window.open('documents/parasoul-gdd.pdf', '_blank')">View GDD</button>
+        </div>
+
+        <div id="footer">
+            © 2025 NianDong Liu - All Rights Reserved
+        </div>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>

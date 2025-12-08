@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NianDong Liu - Game Designer Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Comfortaa:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <div id="loading">
         <div id="spinner"></div>
     </div>
-    
+
     <div id="header" class="animated slideInDown" style="animation-delay:1.8s;">
         <div id="title">NianDong Liu Portfolio</div><br>
         <div id="links">
@@ -30,7 +36,50 @@
             <h1>Hello, I am NianDong Liu</h1>
             <h2>A Game Designer</h2>
             <p class="tagline-sub">Crafting immersive experiences through narrative, level, and audio design</p>
-            <button class="btn_one" onclick="window.location.href='games.html'">View My Games</button>
+
+            <!-- Featured Game - Using background-image -->
+            <div class="featured-game-card" onclick="window.location.href='life-simulator.html'"
+                style="background-image: url('images/Life_Simulator_office.jpg');">
+                <div class="featured-game-overlay">
+                    <h3>Life Simulator</h3>
+                    <p>AI-Driven Life Simulation</p>
+                </div>
+            </div>
+
+            <!-- Other Games -->
+            <div class="other-games-grid">
+                <div class="game-card" onclick="window.location.href='breakout.html'">
+                    <div class="game-card-image">
+                        <img src="images/bo2.jpg" alt="BreakOut">
+                    </div>
+                    <div class="game-card-info">
+                        <h3>BreakOut</h3>
+                        <p>2D Platformer</p>
+                    </div>
+                </div>
+
+                <div class="game-card" onclick="window.location.href='parasoul.html'">
+                    <div class="game-card-image">
+                        <img src="images/title.png" alt="Parasoul">
+                    </div>
+                    <div class="game-card-info">
+                        <h3>Parasoul</h3>
+                        <p>Souls-like Boss Rush</p>
+                    </div>
+                </div>
+
+                <div class="game-card" onclick="window.location.href='between.html'">
+                    <div class="game-card-image">
+                        <img src="images/Screenshot1_442.png" alt="Between">
+                    </div>
+                    <div class="game-card-info">
+                        <h3>Between</h3>
+                        <p>Narrative Exploration</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn_one" onclick="window.location.href='games.html'">View All Games</button>
         </div>
     </div>
 
@@ -49,6 +98,7 @@
         </div>
     </div>
 
-<script src="index.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
 </body>
+
 </html>

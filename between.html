@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Between - NianDong Liu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Comfortaa:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="header-fixed">
+        <div id="title" onclick="window.location.href='index.html'">NianDong Liu Portfolio</div>
+        <div id="links">
+            <a href="games.html" class="active">Games</a>
+            <a href="otherworks.html" style="margin:0px 60px;">Other Works</a>
+            <a href="about.html">About Me</a>
+        </div>
+    </div>
+
+    <div id="page-content">
+        <!-- Project: Between -->
+        <div class="project">
+            <h2>Between</h2>
+            <p class="project-type">First-Person Narrative Exploration | Puzzle | Resource Management</p>
+            <p class="dev-status"><em> Currently in Active Development</em></p>
+
+            <!-- Image Gallery -->
+            <div class="project-gallery">
+                <div class="gallery-container media-glow">
+                    <button class="gallery-btn prev" onclick="changeSlide('between', -1)">&#10094;</button>
+                    <div class="slides" id="between-slides">
+                        <img src="images/Screenshot1_442.png" class="slide active" alt="Between Screenshot 1">
+                        <img src="images/screenshot2_442.png" class="slide" alt="Between Screenshot 2">
+                        <img src="images/screenshot3_442.png" class="slide" alt="Between Screenshot 3">
+                        <img src="images/Screenshot4_442.png" class="slide" alt="Between Screenshot 4">
+                        <img src="images/Screenshot5_442.png" class="slide" alt="Between Screenshot 5">
+                    </div>
+                    <button class="gallery-btn next" onclick="changeSlide('between', 1)">&#10095;</button>
+                </div>
+                <div class="slide-indicators" id="between-indicators">
+                    <span class="indicator active" onclick="currentSlide('between', 0)"></span>
+                    <span class="indicator" onclick="currentSlide('between', 1)"></span>
+                    <span class="indicator" onclick="currentSlide('between', 2)"></span>
+                    <span class="indicator" onclick="currentSlide('between', 3)"></span>
+                    <span class="indicator" onclick="currentSlide('between', 4)"></span>
+                </div>
+            </div>
+
+            <!-- Video -->
+            <div class="video-container media-glow">
+                <iframe src="https://www.youtube.com/embed/uF0v3MB0XAM?si=SFGRrUZksMrdduto&rel=0&modestbranding=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+            <p class="video-note"><em>Note: This video showcases an early concept demo. The game is still in active
+                    development.</em></p>
+
+            <div class="project-description">
+                Between is an first-person narrative exploration game built in Unreal Engine 5, featuring a unique
+                looping structure where each cycle reveals new layers of a mysterious story. Set across 2-3 interior
+                environments, the game challenges players to observe subtle environmental changes, solve interconnected
+                puzzles, and make meaningful resource management decisions that impact subsequent loops. As a solo
+                developer, I'm creating a 30-60 minute experience that emphasizes atmosphere, environmental
+                storytelling, and psychological tension. The game employs minimal UI to maximize immersion, relying on
+                lighting, sound design, and spatial arrangement to guide players through its philosophical narrative.
+                Each loop subtly transforms the world—objects shift, new clues emerge, and previous solutions may no
+                longer work—requiring players to retain knowledge across cycles and adapt their strategies. This projec
+                is currently in active development, Between represents my exploration of how structural repetition can
+                deepen narrative engagement and player investment. This vertical slice demonstrates the overall concept
+                of level1.
+            </div>
+            <button class="btn_two"
+                onclick="window.open('https://youtu.be/uF0v3MB0XAM?si=SFGRrUZksMrdduto', '_blank')">Watch Concept
+                Demo</button>
+            <button class="btn_two" onclick="window.open('documents/GDD WIP Between.pdf', '_blank')">View GDD
+                (WIP)</button>
+        </div>
+
+        <div id="footer">
+            © 2025 NianDong Liu - All Rights Reserved
+        </div>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
