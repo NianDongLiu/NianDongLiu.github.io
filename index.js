@@ -24,13 +24,15 @@ if ((width >= 900)){
 }
 };
 
-setTimeout(function(){
-    $("#loading").addClass("animated fadeOut");
+if ($("#loading").length) {
     setTimeout(function(){
-      $("#loading").removeClass("animated fadeOut");
-      $("#loading").css("display","none");
-    },800);
-},1450);
+        $("#loading").addClass("animated fadeOut");
+        setTimeout(function(){
+          $("#loading").removeClass("animated fadeOut");
+          $("#loading").css("display","none");
+        },800);
+    },1450);
+}
 
 
 // 图片轮播功能
