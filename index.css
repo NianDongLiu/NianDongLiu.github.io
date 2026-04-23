@@ -2161,7 +2161,7 @@ html {
 .video-placeholder:hover .play-button {
     transform: scale(1.2);
     color: #FF4B2B;
-}
+}  
 
 .video-placeholder p {
     position: absolute;
